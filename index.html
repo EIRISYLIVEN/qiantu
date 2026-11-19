@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>钱途 · 记账理财 APP | 极简记账 · 离线优先 · AI 开源节流</title>
+  <meta name="description" content="《钱途》—— 帮普通人看清钱、管住钱。极简记账、离线优先、多渠道聚合、AI 开源节流、安全护航。湖北大学第十二届 APP 创意大赛「细水长流」团队作品。" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- 导航 -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">
+        <span class="logo">钱</span>
+        <span>钱途</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">首页</a>
+        <a href="qa.html">答辩问答</a>
+        <a href="glossary.html">术语大白话</a>
+      </div>
+      <button class="nav-toggle" aria-label="菜单">☰</button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero">
+    <div class="hero-inner">
+      <span class="badge">🌿 湖北大学第十二届 APP 创意大赛 · 初赛作品</span>
+      <h1><span class="qiantu">《钱途》</span><br />记账理财 APP</h1>
+      <p class="tagline">不止记录，更做分析——把记账从「记录工具」升级为「理财顾问」。</p>
+      <div class="pill-row">
+        <span class="pill">极简记账</span>
+        <span class="pill">离线优先</span>
+        <span class="pill">多渠道聚合</span>
+        <span class="pill">AI 开源节流</span>
+        <span class="pill">安全护航</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#features">了解产品</a>
+        <a class="btn btn-ghost" href="qa.html">答辩问答 →</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- 三大痛点 -->
+  <section class="section" id="pain">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">创意来源</span>
+        <h2>移动支付时代的「金钱焦虑」</h2>
+        <p>移动支付让花钱变成无感扫码——钱花出去没有手感、没有痕迹。</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card reveal">
+          <div class="num">①</div>
+          <h3>「钱去哪了」说不清</h3>
+          <p>微信、支付宝、银行卡、现金、花呗多渠道各记各账，没有一个统一账本。</p>
+        </div>
+        <div class="card reveal">
+          <div class="num">②</div>
+          <h3>「月底才傻眼」</h3>
+          <p>缺少实时、可视化的收支趋势，总是月末才发现超支，想补救已来不及。</p>
+        </div>
+        <div class="card reveal">
+          <div class="num">③</div>
+          <h3>「想省钱却无从下手」</h3>
+          <p>知道该省，却不知道具体该从哪一类支出下手。</p>
+        </div>
+      </div>
+      <p style="text-align:center; margin-top:28px; color:var(--muted);" class="reveal">
+        一句话痛点：账目分散、反馈滞后、建议缺失。
+      </p>
+    </div>
+  </section>
+
+  <!-- 产品定位 -->
+  <section class="section alt" id="position">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">产品定位</span>
+        <h2>帮普通人看清钱、管住钱</h2>
+        <p>缓解金钱焦虑、引导适度消费、避免超前消费。</p>
+      </div>
+      <div class="highlight-strip">
+        <div class="hl reveal">
+          <div class="icon">🍃</div>
+          <h4>极简</h4>
+          <p>只保留 5 个主界面，「记一笔」3 秒内完成</p>
+        </div>
+        <div class="hl reveal">
+          <div class="icon">📶</div>
+          <h4>离线优先</h4>
+          <p>数据先存本地，无网络照常记账</p>
+        </div>
+        <div class="hl reveal">
+          <div class="icon">🔗</div>
+          <h4>多渠道聚合</h4>
+          <p>分散收支统一到一个账本</p>
+        </div>
+        <div class="hl reveal">
+          <div class="icon">🤖</div>
+          <h4>AI 开源节流</h4>
+          <p>一句话 + 一条可执行建议</p>
+        </div>
+      </div>
+      <div class="two-col" style="margin-top:36px;">
+        <div class="panel reveal">
+          <h3>适用对象</h3>
+          <ul>
+            <li><b>核心</b><span>18–35 岁在校大学生与年轻职场人</span></li>
+            <li><b>延伸</b><span>家庭共享账本用户、中老年轻量用户</span></li>
+          </ul>
+        </div>
+        <div class="panel reveal">
+          <h3>一句话定位</h3>
+          <ul>
+            <li><b>定位</b><span>不止记录，更做分析——从「记录工具」升级为「理财顾问」</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 核心功能 -->
+  <section class="section" id="modules">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">核心功能</span>
+        <h2>五大版块 · 三级优先推进</h2>
+        <p>按 P0 / P1 / P2 三级优先推进，MVP 聚焦 P0 六项 + 5 个主界面。</p>
+      </div>
+      <div class="grid grid-3">
+        <div class="card reveal">
+          <div class="num">📝</div>
+          <h3>记账版块</h3>
+          <p>手动记账 + 账单导入 + 分类体系，数据的「入口」。</p>
+        </div>
+        <div class="card reveal">
+          <div class="num">🧩</div>
+          <h3>聚合版块</h3>
+          <p>多渠道账目归一、统一账本与对账，数据的「中枢」。</p>
+        </div>
+        <div class="card reveal">
+          <div class="num">📊</div>
+          <h3>可视化版块</h3>
+          <p>周/月折线图、分类占比图，数据「看得见」。</p>
+        </div>
+        <div class="card reveal">
+          <div class="num">💡</div>
+          <h3>分析版块</h3>
+          <p>开源节流双引擎 + AI 建议 + 预算提醒 + 反诈，价值的「出口」。</p>
+        </div>
+        <div class="card reveal">
+          <div class="num">⚙️</div>
+          <h3>设置版块</h3>
+          <p>账号、云同步、支付导入、AI 接入、预算、隐私授权。</p>
+        </div>
+        <div class="card reveal">
+          <div class="num">🚀</div>
+          <h3>MVP 路线</h3>
+          <p>P0 首版 · P1 二版 · P2 远期，聚焦六项，适合 5 人小团队分模块协作。</p>
+        </div>
+      </div>
+
+      <div class="steps" style="margin-top:36px;">
+        <div class="step reveal">
+          <div class="step-num">P0</div>
+          <div>
+            <h4>首版 · 打基础</h4>
+            <p>① 动态新手引导　② 记账　③ 多渠道聚合　④ 离线优先　⑤ 折线图　⑥ 收支自动分析</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">P1</div>
+          <div>
+            <h4>二版 · 加智能</h4>
+            <p>⑦ AI 建议　⑧ 预算与提醒　⑨ 购物订单导入　⑩ 反诈与安全提示</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">P2</div>
+          <div>
+            <h4>远期 · 做深</h4>
+            <p>⑪ 购物记录 AI 智能分析　⑫ 语音记账、截图账单识别、多人/家庭账本</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 六大创新 -->
+  <section class="section alt" id="features">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">六大核心创新</span>
+        <h2>把记账从「记录工具」升级为「理财顾问」</h2>
+      </div>
+      <div class="grid grid-3">
+        <div class="card reveal"><div class="num">①</div><h3>开源节流双引擎</h3><p>首创「开源 + 节流」双引擎，一句话 + 一条可执行建议。</p></div>
+        <div class="card reveal"><div class="num">②</div><h3>离线优先 + 联网同步</h3><p>解决「断网即失效」痛点，弱网/无网照常记账。</p></div>
+        <div class="card reveal"><div class="num">③</div><h3>动态实时新手引导</h3><p>真实界面上逐处高亮、边点边学，几秒上手、零学习成本。</p></div>
+        <div class="card reveal"><div class="num">④</div><h3>豆包 AI 做减法</h3><p>国民级 AI，中老年也认识豆包，认知门槛低、上手亲切。</p></div>
+        <div class="card reveal"><div class="num">⑤</div><h3>先授权 · 后读取</h3><p>任何读取记录的操作均需授权，本地加密存储、可随时撤销。</p></div>
+        <div class="card reveal"><div class="num">⑥</div><h3>反诈安全护航</h3><p>借鉴国家反诈中心，定期推送反诈与网络安全提示。</p></div>
+      </div>
+      <p style="text-align:center; margin-top:30px; font-weight:600; color:var(--green-600);" class="reveal">
+        别人记流水账，我们做理财顾问；别人依赖联网，我们离线优先；别人只做工具，我们兼做公共服务。
+      </p>
+    </div>
+  </section>
+
+  <!-- 界面设计 -->
+  <section class="section" id="ui">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">界面设计</span>
+        <h2>「动态新手引导 + 5 个主界面」的极简布局</h2>
+      </div>
+      <div class="highlight-strip">
+        <div class="hl reveal"><div class="icon">🏠</div><h4>首页</h4></div>
+        <div class="hl reveal"><div class="icon">📈</div><h4>图表</h4></div>
+        <div class="hl reveal"><div class="icon">✏️</div><h4>记账</h4></div>
+        <div class="hl reveal"><div class="icon">🧠</div><h4>分析</h4></div>
+      </div>
+      <div class="grid grid-2" style="margin-top:24px;">
+        <div class="card reveal"><h3>小清新绿 · 极简布局</h3><p>核心操作路径短，「记一笔」3 秒完成。</p></div>
+        <div class="card reveal"><h3>首次使用「出现一处、点一下」</h3><p>动态实时引导，边点边学；账单导入等读取操作均需用户授权。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 技术方案 -->
+  <section class="section alt" id="tech">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">技术方案</span>
+        <h2>本地优先 · 云端同步 · AI 增强</h2>
+      </div>
+      <div class="grid grid-2">
+        <div class="card reveal"><h3>📱 客户端</h3><p>Flutter / uni-app 跨平台，一套代码适配安卓与 iOS。</p></div>
+        <div class="card reveal"><h3>🗄️ 本地存储</h3><p>SQLite 本地数据库，数据先写本地、离线优先。</p></div>
+        <div class="card reveal"><h3>☁️ 云端同步</h3><p>联网自动上传云数据库，多端同步与备份。</p></div>
+        <div class="card reveal"><h3>🤖 AI 能力</h3><p>调用豆包等通用大模型 API，无需自研模型。</p></div>
+      </div>
+
+      <div class="panel" style="margin-top:28px;">
+        <h3>最大难点：微信/支付宝不开放账单接口 → 三条务实路线</h3>
+        <ul>
+          <li><b>A</b><span><b>手动记账</b> —— 几秒记一笔，最简单、100% 可控。</span></li>
+          <li><b>B</b><span><b>账单导入 + AI 识别</b> —— 授权后导入 CSV/邮件/截图，AI 自动解析成账目。</span></li>
+          <li><b>C</b><span><b>购物平台 API</b> —— 淘宝/京东/拼多多开放平台，远期方向。</span></li>
+        </ul>
+        <p style="margin-top:12px; color:var(--muted); font-size:14px;">
+          MVP 起步：「A 手动 + B 导入」起步，C 作为远期演进。AI 选豆包——中老年未必知道「AI」，但都知道「豆包」，认知门槛低。
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品论证 -->
+  <section class="section" id="proof">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">作品论证</span>
+        <h2>可行性 · 可操作性 · 实用性 三维论证</h2>
+      </div>
+      <div class="grid grid-3">
+        <div class="card reveal">
+          <div class="num">✅</div>
+          <h3>可行性</h3>
+          <p>技术可行（成熟框架 + SQLite + 云库 + 豆包 API）；数据可行；团队可行；成本可行。</p>
+        </div>
+        <div class="card reveal">
+          <div class="num">🎯</div>
+          <h3>可操作性</h3>
+          <p>上手零成本、路径短（大键盘输金额 → 选收支 → 选分类 → 保存，3 秒）、场景强、闭环完整。</p>
+        </div>
+        <div class="card reveal">
+          <div class="num">🌟</div>
+          <h3>实用性</h3>
+          <p>高频刚需、即时反馈、隐私友好、社会意义（缓解焦虑 + 反诈护航）。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 竞品分析 -->
+  <section class="section alt" id="competitor">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">竞品分析</span>
+        <h2>随手记 / 鲨鱼记账 / 钱迹 / 内置账单</h2>
+      </div>
+      <div class="two-col">
+        <div class="panel reveal">
+          <h3>竞品普遍不足</h3>
+          <ul>
+            <li><b>功能臃肿</b><span>功能堆砌、界面复杂，广告多、上手成本高。</span></li>
+            <li><b>只记录不指导</b><span>侧重统计，缺「开源节流」式可执行建议。</span></li>
+            <li><b>依赖联网</b><span>离线体验差，弱网/无网场景无法使用。</span></li>
+            <li><b>数据割裂</b><span>难以跨渠道聚合，无法还原「钱的全貌」。</span></li>
+            <li><b>缺公共安全属性</b><span>少有记账 App 主动承担反诈宣传等责任。</span></li>
+          </ul>
+        </div>
+        <div class="panel reveal">
+          <h3>《钱途》差异化定位</h3>
+          <ul>
+            <li><b>极简</b><span>+ 离线优先</span></li>
+            <li><b>多渠道聚合</b><span>+ AI 开源节流（双引擎）</span></li>
+            <li><b>安全护航</b><span>反诈 · 公共服务</span></li>
+          </ul>
+          <p style="margin-top:12px; color:var(--green-600); font-weight:600;">恰好填补上述市场空白。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 盈利模式 -->
+  <section class="section" id="business">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">盈利模式</span>
+        <h2>从免费工具到多元化收入，三步走</h2>
+      </div>
+      <div class="steps">
+        <div class="step reveal">
+          <div class="step-num">1</div>
+          <div><h4>短期 · 起步期</h4><p>以免费工具定位，专注打磨核心体验、积累口碑，验证「开源节流」分析价值。</p></div>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">2</div>
+          <div><h4>中期 · 成长期</h4><p>会员订阅制：高级分析、家庭账本、无限 AI 建议、更多账单导入方式（主要收入来源）。</p></div>
+        </div>
+        <div class="step reveal">
+          <div class="step-num">3</div>
+          <div><h4>长期 · 成熟期</h4><p>金融增值（理财教育/优惠比价/信用管理，与持牌机构合作）+ 企业合作（订单数据洞察/消费报告）。</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 结语 -->
+  <section class="section" style="padding-bottom:20px;">
+    <div class="container" style="text-align:center;">
+      <h2 class="reveal" style="font-size:30px; margin-bottom:12px;">让每一笔钱，都有迹可循、有路可循</h2>
+      <p class="reveal" style="color:var(--muted);">《钱途》兼具社会价值与商业价值，具备清晰、可落地、可持续的市场前景。</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="f-brand">钱途 · 记账理财 APP</div>
+      <p>极简记账 · 离线优先 · 多渠道聚合 · AI 开源节流 · 安全护航。本项目为湖北大学第十二届 APP 创意大赛参赛作品，MIT 协议开源。</p>
+      <div class="f-meta">
+        <span>「细水长流」开发团队 · 负责人：付奕豪 · 生命科学学院</span>
+        <span>2026 · 初赛路演</span>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="回到顶部">↑</button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

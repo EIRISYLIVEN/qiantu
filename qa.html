@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>答辩问答 · 钱途记账理财 APP</title>
+  <meta name="description" content="《钱途》初赛答辩问答准备：常见追问 + 建议回答口径，回答要短、稳、落到「可落地」。" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html"><span class="logo">钱</span><span>钱途</span></a>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html">首页</a>
+        <a href="qa.html">答辩问答</a>
+        <a href="glossary.html">术语大白话</a>
+      </div>
+      <button class="nav-toggle" aria-label="菜单">☰</button>
+    </div>
+  </nav>
+
+  <header class="hero" style="padding:64px 0 48px;">
+    <div class="hero-inner">
+      <span class="badge">🎤 初赛答辩 · 3 分钟</span>
+      <h1 style="font-size:clamp(32px,6vw,48px);">答辩问答准备</h1>
+      <p class="tagline">常见追问 + 建议回答口径。回答要短、稳、落到「可落地」三个字。</p>
+    </div>
+  </header>
+
+  <section class="section" style="padding-top:32px;">
+    <div class="container" style="max-width:820px;">
+
+      <div class="qa-item reveal">
+        <details open>
+          <summary><span class="q">Q1</span> 微信/支付宝不开放账单接口，你们的数据怎么获取？</summary>
+          <div class="qa-body">
+            <p>这正是我们最大的技术难点，我们没有回避。全自动抓取在金融合规下走不通，所以我们走三条务实路线：</p>
+            <ul>
+              <li><b>A 手动记账</b> —— 几秒记一笔，最简单、100% 可控；</li>
+              <li><b>B 账单导入 + AI 识别</b> —— 经用户授权后，导入其自行导出的 CSV/邮件/截图，AI 自动解析成账目；</li>
+              <li><b>C 购物平台 API</b> —— 对接淘宝/京东/拼多多开放平台，作为远期方向。</li>
+            </ul>
+            <p style="margin-top:8px;">MVP 阶段用 <b>A + B</b> 起步，先跑通闭环。</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="qa-item reveal">
+        <details>
+          <summary><span class="q">Q2</span> 和随手记、鲨鱼记账、钱迹有什么区别？</summary>
+          <div class="qa-body">
+            <p>它们普遍存在五个不足：功能臃肿、只记录不指导、依赖联网、数据割裂、缺乏公共安全属性。</p>
+            <p>《钱途》用「<b>极简 + 离线优先 + 多渠道聚合 + AI 开源节流 + 安全护航</b>」做差异化——别人记流水账，我们做理财顾问；别人依赖联网，我们离线优先；别人只做工具，我们兼做公共服务。</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="qa-item reveal">
+        <details>
+          <summary><span class="q">Q3</span> 为什么选「豆包」，而不是更专业的金融 AI？</summary>
+          <div class="qa-body">
+            <p>做减法。我们的用户是普罗大众，你问农村中老年人什么是「AI」，他可能不知道，但<b>豆包是国民级应用，家喻户晓</b>。选大众熟知的国民级 AI，能让「AI 记账分析」对普通用户没有认知门槛，用起来更亲切、更可信。</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="qa-item reveal">
+        <details>
+          <summary><span class="q">Q4</span> 免费怎么盈利？模式能落地吗？</summary>
+          <div class="qa-body">
+            <p>分三步走——</p>
+            <ul>
+              <li><b>短期</b>：免费工具，专注打磨核心体验、积累口碑；</li>
+              <li><b>中期</b>：会员订阅制（高级分析、家庭账本、无限 AI 建议、更多导入方式），这是主要收入来源；</li>
+              <li><b>长期</b>：金融增值服务（与持牌机构合作的理财教育、优惠比价、信用管理）+ 企业合作（消费行为洞察）。</li>
+            </ul>
+          </div>
+        </details>
+      </div>
+
+      <div class="qa-item reveal">
+        <details>
+          <summary><span class="q">Q5</span> 用户隐私怎么保证？</summary>
+          <div class="qa-body">
+            <p>坚持「<b>先授权、后读取</b>」——账单导入、订单对接等任何涉及读取记录的操作，都须用户明确授权后才进行；数据<b>本地加密存储</b>、可随时撤销授权，把隐私主动权交还给用户。</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="qa-item reveal">
+        <details>
+          <summary><span class="q">Q6</span> 反诈和记账理财有什么关系？</summary>
+          <div class="qa-body">
+            <p>我们借鉴「国家反诈中心」等官方 APP 的成熟做法，定期推送反诈宣传与网络安全提示（识别陌生转账、防范电信诈骗、警惕钓鱼链接）。记账理财之外主动承担社会责任，也契合大赛<b>公共服务赛道</b>的定位。</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="qa-item reveal">
+        <details>
+          <summary><span class="q">Q7</span> 技术难度大吗？开发进度怎么保证？</summary>
+          <div class="qa-body">
+            <p>技术栈都是成熟的——Flutter/uni-app + SQLite + 云数据库 + 豆包 API，风险低、文档丰富、成本可控。MVP 聚焦 <b>P0 六项 + 5 个主界面</b>，体量可控，适合 5 人小团队分模块协作，符合大赛「团队 ≤5 人」的要求。</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="qa-item reveal">
+        <details>
+          <summary><span class="q">Q8</span> 「开源节流」分析具体怎么实现？</summary>
+          <div class="qa-body">
+            <p>不做复杂的金融建模，就是<b>双向诊断</b>——收入侧看「如何开源」、支出侧看「如何节流」，最后用「一句话 + 一条可执行建议」的形式输出，把冷冰冰的数字变成用户看得懂、能照着做的理财建议。</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="panel reveal" style="margin-top:28px;">
+        <h3>通用提醒</h3>
+        <ul>
+          <li><b>节奏</b><span>每个回答控制在 20–30 秒，先给结论、再给一句支撑。</span></li>
+          <li><b>坦诚</b><span>遇到不会的，坦诚说「这是我们正在完善的方向」，不要硬编。</span></li>
+          <li><b>关键词</b><span>反复落到三个词：<b>极简、离线优先、可落地</b>。</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="f-brand">钱途 · 记账理财 APP</div>
+      <p>答辩问答准备 · 湖北大学第十二届 APP 创意大赛。</p>
+      <div class="f-meta"><span>「细水长流」开发团队</span><span>2026 · 初赛路演</span></div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="回到顶部">↑</button>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
