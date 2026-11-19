@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>钱途 · 记账理财</title>
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+
+  <!-- 动态新手引导遮罩 -->
+  <div id="onboarding" class="onboarding hidden">
+    <div class="ob-card">
+      <div class="ob-icon">🌱</div>
+      <h2>欢迎使用《钱途》</h2>
+      <p>记一笔，3 秒完成。数据只存在你本机，离线也能用。</p>
+      <ul class="ob-list">
+        <li>✏️ 点底部「记账」开始记第一笔</li>
+        <li>📊 「图表」看你的收支趋势</li>
+        <li>💡 「分析」给你开源节流建议</li>
+      </ul>
+      <button class="btn-primary" id="obStart">开始使用</button>
+    </div>
+  </div>
+
+  <!-- 顶部标题 -->
+  <header class="app-header">
+    <div class="app-title" id="appTitle">首页</div>
+    <div class="app-sub" id="appSub"></div>
+  </header>
+
+  <!-- 主内容区 -->
+  <main class="app-main">
+
+    <!-- 首页 -->
+    <section class="tab-view active" id="view-home">
+      <div class="balance-card">
+        <div class="balance-label">本月结余</div>
+        <div class="balance-amount" id="homeBalance">¥0.00</div>
+        <div class="balance-row">
+          <div class="balance-item"><span>收入</span><b class="up" id="homeIncome">¥0</b></div>
+          <div class="balance-item"><span>支出</span><b class="down" id="homeExpense">¥0</b></div>
+        </div>
+      </div>
+      <div class="quick-add" id="quickAddBtn">
+        <span>＋ 记一笔</span>
+      </div>
+      <div class="list-head">最近账目</div>
+      <div class="tx-list" id="homeList"></div>
+      <div class="empty-tip" id="homeEmpty">还没有账目，点上面「记一笔」开始</div>
+    </section>
+
+    <!-- 图表 -->
+    <section class="tab-view" id="view-chart">
+      <div class="chart-tabs">
+        <button class="chart-tab active" data-chart="trend">趋势</button>
+        <button class="chart-tab" data-chart="pie">分类占比</button>
+      </div>
+      <div class="chart-box" id="chartTrendBox">
+        <div class="chart-title">近 14 天收支趋势</div>
+        <div id="trendChart"></div>
+      </div>
+      <div class="chart-box hidden" id="chartPieBox">
+        <div class="chart-title">本月支出分类占比</div>
+        <div id="pieChart"></div>
+        <div id="pieLegend"></div>
+      </div>
+    </section>
+
+    <!-- 记账 -->
+    <section class="tab-view" id="view-add">
+      <div class="type-switch">
+        <button class="type-btn active" data-type="expense">支出</button>
+        <button class="type-btn" data-type="income">收入</button>
+      </div>
+      <div class="amount-display"><span>¥</span><span id="amountText">0</span></div>
+      <div class="keypad">
+        <button class="key">1</button><button class="key">2</button><button class="key">3</button>
+        <button class="key">4</button><button class="key">5</button><button class="key">6</button>
+        <button class="key">7</button><button class="key">8</button><button class="key">9</button>
+        <button class="key key-dot">.</button><button class="key">0</button><button class="key key-del">⌫</button>
+      </div>
+      <div class="cat-label">分类</div>
+      <div class="cat-grid" id="catGrid"></div>
+      <div class="note-row">
+        <input type="text" id="noteInput" placeholder="备注（可选）" maxlength="30" />
+      </div>
+      <button class="btn-primary save-btn" id="saveTx">保存</button>
+    </section>
+
+    <!-- 分析 -->
+    <section class="tab-view" id="view-analysis">
+      <div class="analysis-hero">
+        <div class="ah-title">本月诊断</div>
+        <div class="ah-sentence" id="ahSentence">先记几笔，我来给你建议</div>
+      </div>
+      <div class="advice-list" id="adviceList"></div>
+      <div class="card anti-fraud">
+        <div class="af-title">🛡️ 反诈提醒</div>
+        <div class="af-text" id="antiFraudText"></div>
+      </div>
+    </section>
+
+    <!-- 我的 -->
+    <section class="tab-view" id="view-me">
+      <div class="me-card">
+        <div class="me-avatar">钱</div>
+        <div class="me-info">
+          <div class="me-name">钱途 · 离线记账</div>
+          <div class="me-desc">数据仅存本机浏览器，不上传</div>
+        </div>
+      </div>
+      <div class="me-list">
+        <div class="me-item" id="budgetItem">
+          <span>月度预算</span><b id="budgetVal">未设置</b>
+        </div>
+        <div class="me-item" id="exportItem">
+          <span>导出数据 (JSON)</span><b>›</b>
+        </div>
+        <div class="me-item danger" id="clearItem">
+          <span>清空所有账目</span><b>›</b>
+        </div>
+      </div>
+      <div class="me-footer">《钱途》MVP 网页版 · 湖北大学 APP 创意大赛</div>
+    </section>
+
+  </main>
+
+  <!-- 底部导航 -->
+  <nav class="tabbar">
+    <button class="tab active" data-tab="home"><span>🏠</span>首页</button>
+    <button class="tab" data-tab="chart"><span>📊</span>图表</button>
+    <button class="tab add-tab" data-tab="add"><span>＋</span></button>
+    <button class="tab" data-tab="analysis"><span>💡</span>分析</button>
+    <button class="tab" data-tab="me"><span>👤</span>我的</button>
+  </nav>
+
+  <!-- 预算弹窗 -->
+  <div id="budgetModal" class="modal hidden">
+    <div class="modal-card">
+      <div class="modal-title">设置月度预算</div>
+      <input type="number" id="budgetInput" placeholder="输入金额（元）" />
+      <div class="modal-btns">
+        <button class="btn-ghost" id="budgetCancel">取消</button>
+        <button class="btn-primary" id="budgetSave">确定</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
